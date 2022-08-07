@@ -20,6 +20,8 @@
 }
 
 
+
+
 /* CABEÇALHO */
 
 .cabeçalho{
@@ -46,7 +48,9 @@
 .cabeçalho_menuItem:hover{
     /* background-color: rgb(242, 246, 246); */
     border-radius: 20px;
-    background-color: rgb(218, 218, 218);
+    /* background-color: rgb(218, 218, 218); */
+    /* background-color: rgb(29, 31, 35); */
+    background-color: rgba(73, 71, 71, 0.325);
 }
 
 .cabeçalho_menuItem img{
@@ -56,12 +60,11 @@
     
 }
 .cabeçalho_menuItem a{
+    /* color: #ffa500; */
     color: #000;
     text-decoration: none;
     font-size: 20px;
     vertical-align: top;
-
-    
 }
 
 
@@ -77,6 +80,8 @@ header{
     border-left: 1px solid #e7ecf0;
     border-right: 1px solid #e7ecf0;
     margin-left: 180px;
+
+    /* border-color: yellow; */
 }
 .conteudoPrincipal_titulo{
     padding: 10px 30px;
@@ -85,20 +90,47 @@ header{
     
 }
 
-.conteudoPrincipal_titulo img{
-    float: right;
+#circle1{
     width: 20px;
+    height: 20px;
+    border: 2px solid #3498DB;
+    border-radius:20px ;
+    float: right;
+    background-color: black;
     cursor: pointer;
+    margin-left: 5px;
+}
+
+#circle2{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498DB;
+    border-radius:20px ;
+    float: right;
+    background-color: rgb(70, 84, 97);
+    cursor: pointer;
+}
+
+#circle3{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498DB;
+    border-radius:20px ;
+    float: right;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 5px;
 }
 
 .conteudoPrincipal_formulario{
     padding: 10px 30px;
     border-top: 1px solid #e7ecf0;
-    border-bottom: 10px solid #e7ecf0;
+    border-bottom: 10px solid #e7ecf0; /*ALTERAR ESTA PARTE*/
     text-align: right;
 }
 
 .conteudoPrincipal_formulario textarea{
+    overflow: hidden;
     display: block;
     width: 100%;
     border: none;
@@ -106,6 +138,9 @@ header{
     resize: none;
     height: 55px;
     font-size: 18px;
+    background: transparent;
+
+    /* color: yellow; */
 }
 .conteudoPrincipal_formulario button{
     background-color: #3498DB;
@@ -116,12 +151,15 @@ header{
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    
 }
 
 .conteudoPrincipal_feed{}
 .conteudoPrincipal_listaTweets{
     display: flex;
     flex-flow: column-reverse nowrap;
+
+   
 }
 .conteudoPrincipal_listaTweets img{
     width: 55px ;
@@ -132,6 +170,8 @@ header{
     display: flex; 
     align-items: flex-start;
     border-bottom: 1px solid #e7ecf0;
+
+    /* background-color: rgb(22, 24, 28); */
 }
 
 .tweet_fotoPerfil{
@@ -156,16 +196,31 @@ header{
 .tweet_conteudo p{
     margin-top: 15px;
     color: #333333;
+    /* color: white; */
 }
 
-.botoesDeinteraçao{
+.botoesDeinteracao{
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+    /* justify-content: center; */
+    /* background-color: red; */
+   
 }
 
-.botoesDeinteraçao img{
-    width: 15px;
+
+
+.bdi:hover{
+    background-color: rgba(100, 148, 237, 0.399);
+    /* background-color:#b3defb; */
+    border-radius: 2px;
+    justify-content: center;
+   
+}
+
+.botoesDeinteracao img{
+    /* width: 15px; */
+    width: 2.7%;
 }
 
 
@@ -210,9 +265,10 @@ header{
 
 .buscaTwitter ::placeholder{
     color: gray;
-    font-size: 17px;
-   
+    font-size: 17px;   
 }
+
+
 
 
 
@@ -236,6 +292,7 @@ header{
 }
 
 .containerDeAssuntos h3{
+    /* color: rgb(87, 86, 86); */
     float: right;
     margin-top: -30px;
     font-size: 25px;
@@ -245,6 +302,9 @@ header{
 .containerDeAssuntos p{
     color: rgb(87, 86, 86);
     font-size: 14px;
+
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .assuntos{
@@ -255,20 +315,38 @@ header{
 }
 
 .assuntos:hover{
-    background-color: rgb(218, 218, 218);
+    /* background-color: rgb(218, 218, 218); */
+    background-color: rgba(73, 71, 71, 0.325);
 }
 
 .termosTwitter{
     color: rgb(87, 86, 86);
     font-size: 14px;
     margin-left: 50px;
-    margin-top: 515px;
+    margin-top: 605px;
     position: fixed;
 }
 
 
 /* QUALQUER COISA MUDAR AS PROPRIEDADES COM PX PARA %, PARA QUE SE ADPTE MELHOR */
 
+ /* body{
+    color: white;
+    background-color: rgb(21, 32, 43);
+}  */
+
+
+/* @media(max-width: 700px){
+    .botoesDeinteracao img{
+        width: 7%;
+    }
+} */
+
+
+/* FAZER A RESPONSIVIDADE SEMELHANTE AO PRÓPRIO TWITTER */
+
+
 /* html{
     background-color: rgb(21, 32, 43);
 } */
+

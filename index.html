@@ -24,42 +24,42 @@
                 <ul class="cabeçalho_menulista">
                     <li class="cabeçalho_menuItem">
                         <img src="imagens/paginaInicial.png">
-                        <a href="">Página inicial</a>
+                        <a href="" id="paginaInicial">Página inicial</a>
                     </li>
 
                     <li class="cabeçalho_menuItem">
                         <img src="imagens/explorar.png">
-                        <a href="">Explorar</a>
+                        <a href="" id="explorar">Explorar</a>
                     </li>
 
                     <li class="cabeçalho_menuItem">
                         <img src="imagens/notificações.png">
-                        <a href="">Notificações</a>
+                        <a href="" id="notificacoes">Notificações</a>
                     </li>
 
                     <li class="cabeçalho_menuItem">
                         <img src="imagens/mensagens.png">
-                        <a href="">Mensagens</a>
+                        <a href="" id="mensagens">Mensagens</a>
                     </li>
 
                     <li class="cabeçalho_menuItem">
                         <img src="imagens/itensSalvos.png">
-                        <a href="">Itens salvos</a>
+                        <a href="" id="itensSalvos">Itens salvos</a>
                     </li>
 
                     <li class="cabeçalho_menuItem">
                         <img src="imagens/listas.png">
-                        <a href="">Listas</a>
+                        <a href="" id="listas">Listas</a>
                     </li>
 
                     <li class="cabeçalho_menuItem">
                         <img src="imagens/perfil.png" width="25px">
-                        <a href="">Perfil</a>
+                        <a href="" id="perfil">Perfil</a>
                     </li>
 
                     <li class="cabeçalho_menuItem">
                         <img src="imagens/mais.png" width="25px">
-                        <a href="">Mais</a>
+                        <a href="" id="mais">Mais</a>
                     </li>
 
                 </ul>
@@ -67,7 +67,10 @@
         </header>
 
         <main class="conteudoPrincipal">
-            <h3 class="conteudoPrincipal_titulo">Página inicial <img src="imagens/pincel.SVG"></h3>
+            <h3 class="conteudoPrincipal_titulo">Página inicial
+                <div id="circle1" onclick="circleBlack()"></div>
+                <div id="circle2" onclick="circleBlue()"></div>
+                <div id="circle3" onclick="circleWhite()"></div></h3>
             <form action="#" class="conteudoPrincipal_formulario">
                 <textarea name="textoTweet" placeholder="O que está acontecendo?"></textarea>
                 <button type="submit">Tweetar</button>
@@ -85,11 +88,11 @@
                             cum aut voluptatibus, harum necessitatibus incidunt
                             ullam fugiat eaque tenetur quia assumenda id, optio
                             alias sunt magni iste?</p>
-                            <div class="botoesDeinteraçao">
-                                <img src="imagens/comentar.SVG" alt="comentarios">
-                                <img src="imagens/retweetar.SVG" alt="retweet">
-                                <img src="imagens/like.SVG" alt="like">
-                                <img src="imagens/compartilhar.SVG" alt="compartilhar">
+                            <div class="botoesDeinteracao">
+                                <img src="imagens/comentar.SVG" alt="comentarios" class="bdi">
+                                <img src="imagens/retweetar.SVG" alt="retweet" class="bdi">
+                                <img src="imagens/like.SVG" alt="like" class="bdi">
+                                <img src="imagens/compartilhar.SVG" alt="compartilhar" class="bdi">
                             </div>
                         </div>
                     </li>
@@ -104,11 +107,11 @@
                             dignissimos reprehenderit deserunt. Molestias rem
                             quisquam fugiat tenetur! Illo rem distinctio explicabo
                             saepe velit dignissimos, soluta ducimus magni.</p>
-                            <div class="botoesDeinteraçao">
-                                <img src="imagens/comentar.SVG" alt="comentarios">
-                                <img src="imagens/retweetar.SVG" alt="retweet">
-                                <img src="imagens/like.SVG" alt="like">
-                                <img src="imagens/compartilhar.SVG" alt="compartilhar">
+                            <div class="botoesDeinteracao">
+                                <img src="imagens/comentar.SVG" alt="comentarios" class="bdi">
+                                <img src="imagens/retweetar.SVG" alt="retweet" class="bdi">
+                                <img src="imagens/like.SVG" alt="like" class="bdi">
+                                <img src="imagens/compartilhar.SVG" alt="compartilhar" class="bdi">
                             </div>
                         </div>
                     </li>
@@ -123,12 +126,12 @@
                             illum odit inventore voluptatem, nostrum at non officia
                             omnis in accusantium. Maiores dolorem molestiae quo
                             provident earum illum?</p>
-                            <div class="botoesDeinteraçao">
-                                <img src="imagens/comentar.SVG" alt="comentarios">
-                                <img src="imagens/retweetar.SVG" alt="retweet">
-                                <img src="imagens/like.SVG" alt="like">
-                                <img src="imagens/compartilhar.SVG" alt="compartilhar">
-                            </div>
+                            <section class="botoesDeinteracao">
+                                <img src="imagens/comentar.SVG" alt="comentarios" class="bdi">
+                                <img src="imagens/retweetar.SVG" alt="retweet" class="bdi">
+                                <img src="imagens/like.SVG" alt="like" class="bdi">
+                                <img src="imagens/compartilhar.SVG" alt="compartilhar" class="bdi">
+                            </section>
                         </div>
                     </li>
                 </ul>
@@ -195,7 +198,6 @@
         <!-- TITULO -->
        
         </aside>
-
      
     </div>
 </body>  
