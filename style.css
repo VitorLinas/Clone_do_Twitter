@@ -2,15 +2,19 @@
     font-family: 'Roboto', sans-serif; 
 }
 
+html{
+    overflow-x: hidden;
+}
+
+
+/* CABEÇALHO */
+
 .container{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
 }
-
-
-/* CABEÇALHO */
 
 header{
     position: fixed;
@@ -21,14 +25,15 @@ header{
     flex-basis: 20%;
     cursor: pointer;
 }
+
 .cabeçalho_logo{
     margin-bottom: 30px;
 }
+
 .cabeçalho_logo img{
     margin-top: 10px;
 }
 
-.cabeçalho_menuLista{}
 .cabeçalho_menuItem{
     margin-bottom: 20px;
     padding: 10px;
@@ -43,8 +48,8 @@ header{
     max-width: 26px;
     margin-top: -3px;
     margin-right: 10px;
-    
 }
+
 .cabeçalho_menuItem a{
     color: #000;
     text-decoration: none;
@@ -62,7 +67,6 @@ header{
     border-right: 1px solid  rgba(204, 202, 202, 0.395);
     margin-left: 180px;
 }
-
 
 .conteudoPrincipal_titulo{
     padding: 10px 30px;
@@ -132,7 +136,6 @@ header{
     cursor: pointer;
 }
 
-.conteudoPrincipal_feed{}
 .conteudoPrincipal_listaTweets{
     display: flex;
     flex-flow: column-reverse nowrap;   
@@ -150,9 +153,6 @@ header{
     border:1px solid rgba(204, 202, 202, 0.395);
 }
 
-.tweet_fotoPerfil{
-    
-}
 .tweet_conteudo{
     margin-right: 20px;
     margin-left: 15px;
@@ -341,7 +341,6 @@ header{
 
     .botoesDeinteracao{
         width: 450px;
-        /* justify-content:space-around; */
     }
 }
 
@@ -366,6 +365,10 @@ header{
 
 @media(max-width: 500px){
 
+    html{
+        width: 115%;
+    }
+
     .cabeçalho_logo img{
         width: 40px;
     }
@@ -374,13 +377,17 @@ header{
         width: 20px;
     }
 
+    .cabeçalho_menuItem:hover{
+        background-color: transparent;
+    }
+
     .conteudoPrincipal{
         margin-left: 60px;
     }
 
     .botoesDeinteracao{
         position: absolute;
-        margin-top: -2px;
+        margin-top: -1px;
         margin-left: -60px;
     }
 
@@ -393,27 +400,17 @@ header{
         margin-bottom: 10px;
         width: 170px;
         margin-right: -20px;
-        /* margin-left: 1px; */
     }
 
     .tweet_conteudo p{
         text-align:left;
-        /* margin: 0;
-        padding: 0; */
         width: 100%;
-        
-        
     }
 
     .tweet_conteudo span{
         white-space: nowrap;
         font-size: 14px;
     }
-
-  
-
-    
-    
 }
 
 
