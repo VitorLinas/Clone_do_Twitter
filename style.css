@@ -1,28 +1,20 @@
-/* html{
-    background-color: whitesmoke; 
-    background-color: black;
-    color: white;
-    background-color: rgb(21, 32, 43);
-} */
-/* BODY */
-
 *,.cabeçalho_menuNavegaçao, .containerDeAssuntos, .termosTwitter{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
 }
-
 
 .container{
     width: 100%;
-    /* max-width: 900px; */
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
 }
 
 
-
-
 /* CABEÇALHO */
+
+header{
+    position: fixed;
+}
 
 .cabeçalho{
     margin-left: -50px;
@@ -36,9 +28,6 @@
     margin-top: 10px;
 }
 
-/* .cabeçalho_menuNavegaçao, .cabeçalho_logo img{
-    position: fixed;
-} */
 .cabeçalho_menuLista{}
 .cabeçalho_menuItem{
     margin-bottom: 20px;
@@ -46,10 +35,7 @@
 }
 
 .cabeçalho_menuItem:hover{
-    /* background-color: rgb(242, 246, 246); */
     border-radius: 20px;
-    /* background-color: rgb(218, 218, 218); */
-    /* background-color: rgb(29, 31, 35); */
     background-color: rgba(73, 71, 71, 0.325);
 }
 
@@ -60,7 +46,6 @@
     
 }
 .cabeçalho_menuItem a{
-    /* color: #ffa500; */
     color: #000;
     text-decoration: none;
     font-size: 20px;
@@ -70,24 +55,19 @@
 
 /* CONTEÚDO PRINCIPAL */
 
-header{
-    position: fixed;
-}
-
 .conteudoPrincipal{
     max-width: 700px;
     flex-basis: 70%;
-    border-left: 1px solid #e7ecf0;
-    border-right: 1px solid #e7ecf0;
+    border-left: 1px solid  rgba(204, 202, 202, 0.395);
+    border-right: 1px solid  rgba(204, 202, 202, 0.395);
     margin-left: 180px;
-
-    /* border-color: yellow; */
 }
+
+
 .conteudoPrincipal_titulo{
     padding: 10px 30px;
     font-size: 20px;
     font-weight: bold;
-    
 }
 
 #circle1{
@@ -115,7 +95,7 @@ header{
     width: 20px;
     height: 20px;
     border: 2px solid #3498DB;
-    border-radius:20px ;
+    border-radius:20px;
     float: right;
     background-color: white;
     cursor: pointer;
@@ -124,8 +104,8 @@ header{
 
 .conteudoPrincipal_formulario{
     padding: 10px 30px;
-    border-top: 1px solid #e7ecf0;
-    border-bottom: 10px solid #e7ecf0; /*ALTERAR ESTA PARTE*/
+    border-top: 1px solid  rgba(204, 202, 202, 0.395);
+    border-bottom: 10px solid  rgba(204, 202, 202, 0.395);
     text-align: right;
 }
 
@@ -139,9 +119,8 @@ header{
     height: 55px;
     font-size: 18px;
     background: transparent;
-
-    /* color: yellow; */
 }
+
 .conteudoPrincipal_formulario button{
     background-color: #3498DB;
     border: none;
@@ -151,35 +130,35 @@ header{
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    
 }
 
 .conteudoPrincipal_feed{}
 .conteudoPrincipal_listaTweets{
     display: flex;
-    flex-flow: column-reverse nowrap;
-
-   
+    flex-flow: column-reverse nowrap;   
 }
+
 .conteudoPrincipal_listaTweets img{
     width: 55px ;
     cursor: pointer;
 }
+
 .conteudoPrincipal_tweet{
     padding: 20px 32px;
     display: flex; 
     align-items: flex-start;
-    border-bottom: 1px solid #e7ecf0;
-
-    /* background-color: rgb(22, 24, 28); */
+    border:1px solid rgba(204, 202, 202, 0.395);
 }
 
 .tweet_fotoPerfil{
     
 }
 .tweet_conteudo{
+    margin-right: 20px;
     margin-left: 15px;
+    overflow: hidden;
 }
+
 .tweet_conteudo h2{
     display: inline-block;
     cursor: pointer;
@@ -193,33 +172,24 @@ header{
     display: block;
     color: #828282;
 }
+
 .tweet_conteudo p{
-    margin-top: 15px;
-    color: #333333;
-    /* color: white; */
+    margin-top: 15px; 
 }
 
 .botoesDeinteracao{
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
-    /* justify-content: center; */
-    /* background-color: red; */
-   
+    margin-top: 15px; 
 }
-
-
 
 .bdi:hover{
     background-color: rgba(100, 148, 237, 0.399);
-    /* background-color:#b3defb; */
     border-radius: 2px;
     justify-content: center;
-   
 }
 
 .botoesDeinteracao img{
-    /* width: 15px; */
     width: 2.7%;
 }
 
@@ -238,11 +208,8 @@ header{
     display: block;
     margin-left: 30px;
     width: 350px;
-    /* background-color: rgb(226, 224, 224); */
     margin-bottom: 15px;
-    /* background-color: rgb(87, 87, 87); */
     background-color: rgb(228, 236, 236);
-
     position: fixed;
 }
 
@@ -250,7 +217,6 @@ header{
     width: 25px;
     margin-bottom: -8px;
     margin-left: 6px;
-    
 }
 
 .buscaTwitter input {
@@ -267,10 +233,6 @@ header{
     color: gray;
     font-size: 17px;   
 }
-
-
-
-
 
 .containerDeAssuntos{
     border-radius: 20px;
@@ -292,7 +254,6 @@ header{
 }
 
 .containerDeAssuntos h3{
-    /* color: rgb(87, 86, 86); */
     float: right;
     margin-top: -30px;
     font-size: 25px;
@@ -302,20 +263,17 @@ header{
 .containerDeAssuntos p{
     color: rgb(87, 86, 86);
     font-size: 14px;
-
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
 .assuntos{
-    /* margin-top: 25px; */
     padding: 12px;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .assuntos:hover{
-    /* background-color: rgb(218, 218, 218); */
     background-color: rgba(73, 71, 71, 0.325);
 }
 
@@ -327,26 +285,119 @@ header{
     position: fixed;
 }
 
+/* RESPONSIVIDADE */
 
-/* QUALQUER COISA MUDAR AS PROPRIEDADES COM PX PARA %, PARA QUE SE ADPTE MELHOR */
+@media(max-width: 1300px){
 
- /* body{
-    color: white;
-    background-color: rgb(21, 32, 43);
-}  */
-
-
-/* @media(max-width: 700px){
-    .botoesDeinteracao img{
-        width: 7%;
+    .cabeçalho_menuItem a{
+        display: none;
     }
-} */
+
+    .conteudoPrincipal{
+        max-width: 650px;
+        margin-left: 80px;
+    }
+
+    .cabeçalho_menuItem{
+        margin-left: 65px;
+        
+    }
+
+    .cabeçalho_logo img{
+        margin-left: 65px;
+    }
+}
+
+@media(max-width: 1150px){
+
+    .buscaTwitter{
+        width: 300px;
+    }
+
+    .buscaTwitter img{
+        width: 20px;
+        margin-bottom: -4px;
+    }
+
+    .containerDeAssuntos{
+        width: 300px;
+    }
+
+    .buscaTwitter, .containerDeAssuntos, .termosTwitter{
+        margin-left: 15px;
+    }
+}
 
 
-/* FAZER A RESPONSIVIDADE SEMELHANTE AO PRÓPRIO TWITTER */
+@media(max-width: 1000px){
+    .conteudoPrincipal{
+        max-width: 150%;
+        margin-left: 100px;
+    }
+
+    .buscaTwitter, .containerDeAssuntos, .termosTwitter{
+        display: none;
+    }
+
+    .botoesDeinteracao{
+        width: 450px;
+        /* justify-content:space-around; */
+    }
+}
 
 
-/* html{
-    background-color: rgb(21, 32, 43);
-} */
+@media(max-width: 750px){
+    .conteudoPrincipal{
+        margin-left: 70px;
+        max-width: 800%;
+        width: 80%;
+    }
+
+    .botoesDeinteracao{
+        width: 400px;
+        justify-content:flex-start;
+        margin-left: -60px;
+    }
+
+    .botoesDeinteracao img{
+        margin-left: 62px;
+    }
+}
+
+@media(max-width: 500px){
+    .cabeçalho_logo img{
+        width: 40px;
+    }
+
+    .cabeçalho_menuItem img{
+        width: 20px;
+    }
+
+    .conteudoPrincipal{
+        margin-left: 60px;
+    }
+
+    .botoesDeinteracao{
+        position: absolute;
+        margin-top: -2px;
+        margin-left: -60px;
+    }
+
+    .botoesDeinteracao img{
+        margin-top: 15px;
+        margin-left: 40px ;
+    }
+
+    .tweet_conteudo{
+        margin-bottom: 10px;
+    }
+
+    .tweet_conteudo p{
+        text-align:left;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
 

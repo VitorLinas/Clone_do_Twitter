@@ -3,19 +3,44 @@ const tweetar = document.querySelector('button');
 const textarea = document.querySelector('textarea');
 const feed = document.querySelector('.conteudoPrincipal_listaTweets');
 
+// document.onkeydown = teclaEnter;
+// function teclaEnter(e){
+//     if(e.keyCode == 13){
+//         console.log('teste');
+        
+//     }
+// }
+// document.addEventListener('keypress', pegarTweet);
+
+
 
 function pegarTweet(event) {
-    event.preventDefault(); //previne que o evento padrão do formulario (tentar enviar para algum lugar) ocorra.
+    // event.preventDefault(); //previne que o evento padrão do formulario (tentar enviar para algum lugar) ocorra.
     const tweetTextarea = textarea.value;
+    // criarTweet(tweetTextarea);
+    // tweetar.style.opacity = 0
+   if(tweetTextarea == ''){
+    console.log('Sem conteudo');
+   } else{
+    event.preventDefault();
     criarTweet(tweetTextarea);
-    // circleWhite;
-    // circleBlue;
-    // circleBlack;
+   }
 }
+
+document.onkeydown = teclaEnter;
+
+    function teclaEnter(e){
+        if(e.keyCode == 13){
+            pegarTweet(event);
+        }
+    }
+   
+
 
 tweetar.addEventListener('click', pegarTweet);
 
 function criarTweet(tweetTexto){
+
     console.log(tweetTexto);
 
     let data = new Date();
@@ -64,9 +89,6 @@ function listarTweet(tweet){
     let p = document.createElement("p");
     p.innerText = texto;
 
-    // p.style.color = 'red';
-
-
     let section = document.createElement("section");
     section.classList.add("botoesDeinteracao")
     // console.log(section);
@@ -109,20 +131,18 @@ function listarTweet(tweet){
     section.appendChild(comp);
     console.log(li);
 
-
-    // p.style.color ='white';
-   
-    // if(circleWhite === true){
-    //     p.style.color = 'blue';
-    // }else{
-    //     p.style.color - 'red'
+    // let tamanho = p.style.width;
+    // if(tamanho > 50){
+    //     console.log("iu");
     // }
+
 }  
     
 
 
 
 function circleWhite(){ 
+    
     console.log("CIRCLEWHITE");
     
     // location. reload();
@@ -149,10 +169,6 @@ function circleWhite(){
             palavrasPequenash3[index].style.color = "black"; 
     }
 
-    let bordas = document.querySelectorAll(".conteudoPrincipal, .conteudoPrincipal_formulario, .conteudoPrincipal_tweet");
-        for (let index = 0; index < bordas.length; index++) {
-        bordas[index].style.borderColor = "#e7ecf0"; 
-    }
 
     let fundoBusca =  document.querySelectorAll(".buscaTwitter");
         for (let index = 0; index < fundoBusca.length; index++) {
@@ -175,7 +191,7 @@ function circleBlue(){
     
 
 
-    let palavras = document.querySelectorAll("a, .tweet_conteudo p, .buscaTwitter input, .conteudoPrincipal_formulario textarea");
+    let palavras = document.querySelectorAll("a,html p, .tweet_conteudo p, .buscaTwitter input, .conteudoPrincipal_formulario textarea");
     for (let index = 0; index < palavras.length; index++) {
       palavras[index].style.color = "white"; 
     }
@@ -185,10 +201,6 @@ function circleBlue(){
         palavrasPequenas[index].style.color = "rgb(112,124,137)"; 
     }
 
-    let bordas = document.querySelectorAll(".conteudoPrincipal, .conteudoPrincipal_formulario, .conteudoPrincipal_tweet");
-        for (let index = 0; index < bordas.length; index++) {
-        bordas[index].style.borderColor = "rgb(56,68,77)"; 
-    }
 
     let fundo =  document.querySelectorAll(".buscaTwitter, .containerDeAssuntos");
         for (let index = 0; index < fundo.length; index++) {
@@ -204,21 +216,16 @@ function circleBlack(){
     document.body.style.backgroundColor = 'black';
     document.body.style.color = 'white';
 
-    let palavras = document.querySelectorAll("a, .tweet_conteudo p, .buscaTwitter input, .conteudoPrincipal_formulario textarea");
+    let palavras = document.querySelectorAll("a, section p, .tweet_conteudo p, .buscaTwitter input, .conteudoPrincipal_formulario textarea");
         for (let index = 0; index < palavras.length; index++) {
           palavras[index].style.color = "white"; 
     }
 
-    let palavrasPequenas = document.querySelectorAll(".containerDeAssuntos p, .containerDeAssuntos h3, .termosTwitter");
+    let palavrasPequenas = document.querySelectorAll(".containerDeAssuntos p, .containerDeAssuntos h3, .termosTwitter ");
     for (let index = 0; index < palavrasPequenas.length; index++) {
         palavrasPequenas[index].style.color = "rgb(84,88,96)"; 
     }
 
-
-    let bordas = document.querySelectorAll(".conteudoPrincipal, .conteudoPrincipal_formulario, .conteudoPrincipal_tweet");
-        for (let index = 0; index < bordas.length; index++) {
-        bordas[index].style.borderColor = "rgb(47,51,54)"; 
-    }
 
     let fundo =  document.querySelectorAll(".buscaTwitter, .containerDeAssuntos");
         for (let index = 0; index < fundo.length; index++) {
@@ -226,3 +233,6 @@ function circleBlack(){
     }
 }
 
+// OS TERMOS ESTÃO FICANDO BRANCO JUNTO AO SECTION P 
+
+// SE O TEXTAREA TIVER 60 LENGTH ADICIONA O /N
