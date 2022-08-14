@@ -32,8 +32,6 @@ function criarTweet(tweetTexto){
     let hora = data.getHours();
     let minutos = data.getMinutes();
 
-    // let interation = document.getElementsByClassName("botoesDeinteracao")
-
     const tweet = {
         nome: "Twitter",
         foto: "imagens/perfilTwitter.png",

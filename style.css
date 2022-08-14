@@ -353,7 +353,7 @@ header{
     }
 
     .botoesDeinteracao{
-        width: 400px;
+        width: 500px;
         justify-content:flex-start;
         margin-left: -60px;
     }
@@ -373,10 +373,6 @@ header{
         width: 40px;
     }
 
-    .cabeçalho_menuItem img{
-        width: 20px;
-    }
-
     .cabeçalho_menuItem:hover{
         background-color: transparent;
     }
@@ -386,9 +382,10 @@ header{
     }
 
     .botoesDeinteracao{
+        width: 500px;
         position: absolute;
-        margin-top: -1px;
-        margin-left: -60px;
+        margin-top: -3px;
+        margin-left: -35px;
     }
 
     .botoesDeinteracao img{
@@ -411,6 +408,7 @@ header{
         white-space: nowrap;
         font-size: 14px;
     }
+
 }
 
 
