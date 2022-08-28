@@ -366,7 +366,8 @@ header{
 @media(max-width: 500px){
 
     html{
-        width: 115%;
+        width: 120%;
+        max-width: 120%;
     }
 
     .cabeçalho_logo img{
@@ -408,6 +409,8 @@ header{
         white-space: nowrap;
         font-size: 14px;
     }
+
+  
 
 }
 
